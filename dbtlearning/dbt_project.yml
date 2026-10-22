@@ -15,7 +15,8 @@ macro-paths:
 snapshot-paths:
   - snapshots
 models:
-  dev:
-    +materialized: view
-  staging:
-    +materialized: table
+    dbtlearning:
+      dev:
+        +materialized: view  
+      staging:
+        +materialized: table
