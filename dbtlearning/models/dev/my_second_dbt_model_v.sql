@@ -1,6 +1,6 @@
-
+{{ config(schema='DBT_SCHEMA_STG')}}
 select *
-  from {{ ref('MY_FIRST_DBT_MODEL') }}
+  from {{ ref('my_first_dbt_model') }}
   where id = 1
 
 
