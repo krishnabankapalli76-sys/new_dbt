@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: staging                 # The logical dbt name used in your SQL files
+    database: DBTPROJECT      # The physical database name in your warehouse
+    schema: DBT_SCHEMA         # The physical schema name in your warehouse
+    description: "Raw data synced from Stripe via Fivetran"
+    
+    tables:
+      - name: MY_FIRST_DBT_MODEL            # The physical table name
+        description: "Credit card charges and transactional records"
+        columns:
+          - name: id
+            description: "The unique identifier for the charge"            

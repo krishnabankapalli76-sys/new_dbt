@@ -1,0 +1,17 @@
+dbtlearning:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: ACCOUNTADMIN
+      warehouse: DBT_WH
+      database: DBTPROJECT
+      schema: DBT_SCHEMA
+      threads: 8
+    staging:
+      type: snowflake
+      role: ACCOUNTADMIN
+      warehouse: DBT_WH
+      database: DBTPROJECT
+      schema: DBT_SCHEMA_STG
+      threads: 8
